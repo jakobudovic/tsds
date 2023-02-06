@@ -1,2 +1,31 @@
-# time-series-data-segmentation
-A python library used to analyse any time series data.
+# tsds: Time Series Data Segmentation Algorithm
+
+This is a Python library for time series data segmentation, specifically developed for clinical data. It includes the following components:
+
+1. Dimensionality reduction using Non-negative Matrix Factorization (NMF)
+2. Optimal number of clusters calculation using Silhouette score, Calinski Harabasz score, and Davies Bouldin score.
+3. Predictive modeling using Multilayer Perceptron (MLP) classifier, Support Vector Machines (SVM), and Random Forest.
+4. Explanation of cluster groups using SHAP values.
+5. Analysis and simulation of disease progression using skip grams and Markov chains, with visual representation of group likelihood changes.
+
+## Usage
+
+To use the library, simply import it into your project and follow the steps outlined in the components above. Detailed usage instructions and examples can be found in the library's documentation.
+
+## Dependencies
+
+The library requires the following dependencies:
+
+- NumPy
+- Pandas
+- Scikit-learn
+- SHAP
+- Matplotlib (for visual representation)
+
+## Contribution
+
+We welcome contributions to this library. If you have any suggestions or bug reports, please create a GitHub issue. If you would like to contribute code, please submit a pull request.
+
+## License
+
+This library is available under the GNU General Public License Version 3.
