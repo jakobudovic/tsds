@@ -1,18 +1,41 @@
-import pathlib
+import re
 
-from setuptools import setup
+# Change the content according to your package.
+import setuptools
 
-HERE = pathlib.Path(__file__).parent
-README = (HERE / "README.md").read_text()
-setup(
-    name="tsds",
-    version="0.0.1",
-    description=" A python library used to analyse any time series data",
-    long_description=README,
+# Extract the version from the init file.
+VERSIONFILE = "relevantpackage/__init__.py"
+getversion = re.search(
+    r"^__version__ = ['\"]([^'\"]*)['\"]", open(VERSIONFILE, "rt").read(), re.M
+)
+if getversion:
+    new_version = getversion.group(1)
+else:
+    raise RuntimeError(f"Unable to find version string in {VERSIONFILE}.")
+
+# Configurations
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+setuptools.setup(
+    install_requires=["matplotlib", "numpy", "pandas"],  # TODO deterine dependencies
+    python_requires=">=3",  # Minimum Python version
+    name="tsds",  # Package name
+    version=new_version,  # Version
+    author="J.Udovic",  # Author name
+    author_email="jakobudovic2@gmail.com",  # Author mail
+    description="Python package for my library tsds.",  # Short package description
+    long_description=long_description,  # Long package description
     long_description_content_type="text/markdown",
-    author="Jakob Udovic",
-    author_email="jakobudovic2@gmail.com",
-    license="GNU",
-    packages=["tsds"],
-    zip_safe=False,
+    url="https://github.com/jakobudovic/tsds",  # Url to your Git Repo
+    download_url="https://github.com/jakobudovic/tsds"  # TODO release
+    + new_version
+    + ".tar.gz",
+    packages=setuptools.find_packages(),  # Searches throughout all dirs for files to include
+    include_package_data=True,  # Must be true to include files depicted in MANIFEST.in
+    license_files=["LICENSE"],  # License file
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU License",
+        "Operating System :: OS Independent",
+    ],
 )
