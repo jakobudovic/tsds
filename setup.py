@@ -19,7 +19,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     install_requires=["matplotlib", "numpy", "pandas"],  # TODO deterine dependencies
     python_requires=">=3",  # Minimum Python version
-    name="tsds",  # Package name
+    name="tsds",
     version=new_version,  # Version
     author="J.Udovic",  # Author name
     author_email="jakobudovic2@gmail.com",  # Author mail
