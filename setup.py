@@ -4,7 +4,7 @@ import re
 import setuptools
 
 # Extract the version from the init file.
-VERSIONFILE = "relevantpackage/__init__.py"
+VERSIONFILE = "tsds/__init__.py"
 getversion = re.search(
     r"^__version__ = ['\"]([^'\"]*)['\"]", open(VERSIONFILE, "rt").read(), re.M
 )
