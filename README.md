@@ -3,8 +3,6 @@
 [![Python](https://img.shields.io/pypi/pyversions/tsds)](https://img.shields.io/pypi/pyversions/tsds)
 [![Pypi](https://img.shields.io/pypi/v/tsds)](https://pypi.org/project/tsds/)
 [![LOC](https://sloc.xyz/github/jakobudovic/tsds/?category=code)](https://github.com/jakobudovic/tsds/)
-[![Downloads](https://static.pepy.tech/personalized-badge/tsds?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=PyPI%20downloads/month)](https://pepy.tech/project/tsds)
-[![Downloads](https://static.pepy.tech/personalized-badge/tsds?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/tsds)
 [![License](https://img.shields.io/badge/license-GNU-green.svg)](https://github.com/jakobudovic/tsds/blob/master/LICENSE)
 [![Forks](https://img.shields.io/github/forks/jakobudovic/tsds.svg)](https://github.com/jakobudovic/tsds/network)
 [![Issues](https://img.shields.io/github/issues/jakobudovic/tsds.svg)](https://github.com/jakobudovic/tsds/issues)
