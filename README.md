@@ -1,5 +1,15 @@
 # tsds: Time Series Data Segmentation Algorithm
 
+[![Python](https://img.shields.io/pypi/pyversions/tsds)](https://img.shields.io/pypi/pyversions/tsds)
+[![Pypi](https://img.shields.io/pypi/v/tsds)](https://pypi.org/project/tsds/)
+[![LOC](https://sloc.xyz/github/erdogant/tsds/?category=code)](https://github.com/erdogant/tsds/)
+[![Downloads](https://static.pepy.tech/personalized-badge/tsds?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=PyPI%20downloads/month)](https://pepy.tech/project/tsds)
+[![Downloads](https://static.pepy.tech/personalized-badge/tsds?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/tsds)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/erdogant/tsds/blob/master/LICENSE)
+[![Forks](https://img.shields.io/github/forks/erdogant/tsds.svg)](https://github.com/erdogant/tsds/network)
+[![Issues](https://img.shields.io/github/issues/erdogant/tsds.svg)](https://github.com/erdogant/tsds/issues)
+[![Project Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+
 This is a Python library for time series data segmentation, specifically developed for clinical data. It includes the following components:
 
 1. Dimensionality reduction using Non-negative Matrix Factorization (NMF)
