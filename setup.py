@@ -1,6 +1,5 @@
 import re
 
-# Change the content according to your package.
 import setuptools
 
 # Extract the version from the init file.
@@ -25,21 +24,21 @@ setuptools.setup(
         "shap",
         "nltk",
     ],
-    python_requires=">=3",  # Minimum Python version
+    python_requires=">=3",
     name="tsds",
-    version=new_version,  # Version
-    author="J.Udovic",  # Author name
-    author_email="jakobudovic2@gmail.com",  # Author mail
-    description="Python package for my library tsds.",  # Short package description
-    long_description=long_description,  # Long package description
+    version=new_version,
+    author="J.Udovic",
+    author_email="jakobudovic2@gmail.com",
+    description="Python package for my library tsds.",
+    long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/jakobudovic/tsds",  # Url to your Git Repo
+    url="https://github.com/jakobudovic/tsds",
     download_url="https://github.com/jakobudovic/tsds/archive/"
     + new_version
     + ".tar.gz",
     packages=setuptools.find_packages(),  # Searches throughout all dirs for files to include
     include_package_data=True,  # Must be true to include files depicted in MANIFEST.in
-    license_files=["LICENSE"],  # License file
+    license_files=["LICENSE"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU Affero General Public License v3",
