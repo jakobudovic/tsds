@@ -1,4 +1,4 @@
-from warnings import simplefilter  # import warnings filter
+from warnings import simplefilter
 
 from sklearn.decomposition import NMF
 
