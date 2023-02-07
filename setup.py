@@ -17,7 +17,14 @@ else:
 with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
-    install_requires=["matplotlib", "numpy", "pandas"],  # TODO deterine dependencies
+    install_requires=[
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "sklearn",
+        "shap",
+        "nltk",
+    ],
     python_requires=">=3",  # Minimum Python version
     name="tsds",
     version=new_version,  # Version
