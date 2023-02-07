@@ -28,6 +28,7 @@ The library requires the following dependencies:
 - Pandas
 - Scikit-learn
 - SHAP
+- nltk
 - Matplotlib (for visual representation)
 
 ## Contribution
