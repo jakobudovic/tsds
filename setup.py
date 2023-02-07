@@ -34,7 +34,7 @@ setuptools.setup(
     long_description=long_description,  # Long package description
     long_description_content_type="text/markdown",
     url="https://github.com/jakobudovic/tsds",  # Url to your Git Repo
-    download_url="https://github.com/jakobudovic/tsds"  # TODO release
+    download_url="https://github.com/jakobudovic/tsds/archive/"
     + new_version
     + ".tar.gz",
     packages=setuptools.find_packages(),  # Searches throughout all dirs for files to include
