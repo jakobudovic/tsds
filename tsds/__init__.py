@@ -2,7 +2,7 @@ from tsds.tsds import TimeSeriesDataSegmentation
 
 __author__ = "J.Udovic"
 __email__ = "jakobudovic2@gmail.com"
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 
 __doc__ = """
 TimeSeriesDataSegmentation
