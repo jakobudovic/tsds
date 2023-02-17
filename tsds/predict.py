@@ -22,15 +22,18 @@ def get_predicted_df(
         df_clustering.drop([ids_col], axis=1).copy(),
         np.ravel(df_bl_visits_clusters[[f"no_cluster_{optimal_cluster_no}"]].copy()),
     )
-    model, explainer = get_best_performing_model(X, y, nn_max_iter)
+
+    X_train, X_test, _, _ = train_test_split(X, y, test_size=0.3, random_state=22)
+
+    model, explainer = get_best_performing_model(X.values, y, nn_max_iter)
     print(f"Best performing model for prediction: {model}")
 
-    model.fit(X, y)
-    y_pred = model.predict(df_prediction.drop([ids_col], axis=1))
+    model.fit(X.values, y)
+    y_pred = model.predict(df_prediction.drop([ids_col], axis=1).values)
     df_prediction.loc[:, "cluster"] = np.ravel(y_pred)  # append predictions
     df_clustering.loc[:, "cluster"] = np.ravel(y)  # append predictions
 
-    return df_clustering, df_prediction, model, explainer
+    return df_clustering, df_prediction, X_train, X_test, model, explainer
 
 
 def get_best_performing_model(X, y, nn_max_iter=150):
